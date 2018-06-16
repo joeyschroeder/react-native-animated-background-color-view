@@ -1,3 +1,5 @@
+[![npm](https://img.shields.io/npm/v/react-native-animated-background-color-view.svg)](https://www.npmjs.com/package/react-native-animated-background-color-view)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 [![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/issues)
 [![GitHub forks](https://img.shields.io/github/forks/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/network)
 [![GitHub stars](https://img.shields.io/github/stars/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/stargazers)
@@ -5,7 +7,7 @@
 # React Native Animated Background Color View
 A modified React Native `View` component that animates it's `backgroundColor` when `color` prop changes. **Works on iOS & Android.**
 
-## Example App
+## Example
 ![react-native-animated-background-color-view](https://github.com/joeyschroeder/react-native-animated-background-color-view/master/demo.gif "react-native-animated-background-color-view")
 
 ## Installation
@@ -73,6 +75,9 @@ I use [SemVer](https://docs.npmjs.com/getting-started/semantic-versioning) for v
 * **Joey Schroeder** - *Initial work* - [joeyschroeder.com](https://joeyschroeder.com)
 
 See also the list of [contributors](https://github.com/joeyschroeder/react-native-animated-background-color-view/graphs/contributors) who participated in this project.
+
+## Contributing
+Please submit a pull request with any features/fixes for the project. I apologize in advance for the slow action on pull requests and issues. Please follow the [ESLint rules](https://github.com/joeyschroeder/react-native-animated-background-color-view/blob/master/.eslintrc.json) for the project.
 
 ## License
 This project is licensed under the MIT License - see the [MIT Open Source Initiative](https://opensource.org/licenses/MIT) for details.
