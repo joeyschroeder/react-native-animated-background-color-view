@@ -8,7 +8,7 @@
 A modified React Native `View` component that animates it's `backgroundColor` when `color` prop changes. **Works on iOS & Android.**
 
 ## Example
-![react-native-animated-background-color-view](https://github.com/joeyschroeder/react-native-animated-background-color-view/master/demo.gif "react-native-animated-background-color-view")
+![react-native-animated-background-color-view](https://github.com/joeyschroeder/react-native-animated-background-color-view/blob/master/demo.gif?raw=true "react-native-animated-background-color-view")
 
 ## Installation
 `npm install react-native-animated-background-color-view --save`
