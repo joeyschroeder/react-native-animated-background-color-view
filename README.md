@@ -1,7 +1,6 @@
 [![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/issues)
 [![GitHub forks](https://img.shields.io/github/forks/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/network)
 [![GitHub stars](https://img.shields.io/github/stars/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/stargazers)
-[![GitHub license](https://img.shields.io/github/license/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view)
 
 # React Native Animated Background Color View
 A modified React Native `View` component that animates it's `backgroundColor` when `color` prop changes. **Works on iOS & Android.**
