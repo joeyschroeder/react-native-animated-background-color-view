@@ -99,10 +99,10 @@ AnimatedBackgroundColorView.defaultProps = {
 
 AnimatedBackgroundColorView.propTypes = {
     children: PropTypes.oneOfType([ PropTypes.array, PropTypes.object ]),
-    color: PropTypes.string,
-    delay: PropTypes.number,
-    duration: PropTypes.number,
-    easing: PropTypes.func,
+    color: PropTypes.string.isRequired,
+    delay: PropTypes.number.isRequired,
+    duration: PropTypes.number.isRequired,
+    easing: PropTypes.func.isRequired,
     initialColor: PropTypes.string,
     style: ViewPropTypes.style
 };
