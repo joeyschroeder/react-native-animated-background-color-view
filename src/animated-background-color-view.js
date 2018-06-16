@@ -102,7 +102,7 @@ AnimatedBackgroundColorView.propTypes = {
     color: PropTypes.string,
     delay: PropTypes.number,
     duration: PropTypes.number,
-    easing: PropTypes.function,
+    easing: PropTypes.func,
     initialColor: PropTypes.string,
     style: ViewPropTypes.style
 };
