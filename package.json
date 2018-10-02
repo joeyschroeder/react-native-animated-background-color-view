@@ -2,13 +2,13 @@
   "name": "react-native-animated-background-color-view",
   "version": "1.0.3",
   "description": "A modified React Native 'View' component that animates it's 'backgroundColor' when 'color' prop changes.",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
+    "build": "./node_modules/.bin/babel src --out-dir lib && echo \"\\x1b[102m\\x1b[1m BABEL \\x1b[0m\" Library built",
     "clean": "rm -rf lib/ && echo \"\\x1b[102m\\x1b[1m CLEAN \\x1b[0m\" Library directory removed",
     "eslint": "./node_modules/.bin/eslint src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" No JavaScript ESLint errors to fix",
     "eslint:fix": "./node_modules/.bin/eslint --fix src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" ESLint JavaScript errors fixed",
-    "build": "./node_modules/.bin/babel src/ --out-dir lib && echo \"\\x1b[102m\\x1b[1m BABEL \\x1b[0m\" Library built",
-    "prepublish": "npm run --silent eslint:fix && npm run --silent clean && npm --silent run build"
+    "prepublish": "npm run --silent eslint:fix && npm run --silent clean && npm run --silent build"
   },
   "repository": {
     "type": "git",
