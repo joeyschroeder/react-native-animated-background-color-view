@@ -1,8 +1,14 @@
 {
-  "presets": ["react-native"],
+  "presets": [
+    "env",
+    "react-native"
+  ],
   "env": {
     "development": {
       "plugins": ["transform-react-jsx-source"]
+    },
+    "production": {
+      "presets": ["react-optimize"]
     }
   }
 }
