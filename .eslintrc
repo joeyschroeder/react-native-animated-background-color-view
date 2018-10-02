@@ -11,8 +11,8 @@
   ],
   "parser": "babel-eslint",
   "plugins": [
-    "react-native",
-    "react"
+    "react",
+    "react-native"
   ],
   "rules": {
     "comma-dangle": 0,
