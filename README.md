@@ -1,7 +1,7 @@
 [![npm](https://img.shields.io/npm/v/react-native-animated-background-color-view.svg)](https://www.npmjs.com/package/react-native-animated-background-color-view)
+[![npm downloads](https://img.shields.io/npm/dt/react-native-animated-background-color-view.svg)](https://www.npmjs.com/package/react-native-animated-background-color-view.svg)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 [![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/issues)
-[![GitHub forks](https://img.shields.io/github/forks/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/network)
 [![GitHub stars](https://img.shields.io/github/stars/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/stargazers)
 
 # React Native Animated Background Color View
@@ -31,8 +31,8 @@ Each time the `color` prop value changes the `backgroundColor` will use the [Rea
 You can also specifiy an initial color for the background color to animate from when the component mounts:
 ```
 <AnimatedBackgroundColorView
-    color='#00aced'
-    initialColor='red'
+  color='#00aced'
+  initialColor='red'
 />
 ```
 On mount the component `backgroundColor` will be `blue` and then animate to `#00aced`.
@@ -42,28 +42,30 @@ The `AnimatedBackgroundColorView` component works just like the standard React N
 
 ```
 class AnimatedBackgroundColorViewWithText extends Component {
-    render = () => {
-        return (
-            <AnimatedBackgroundColorView
-                color='#00aced'
-                initialColor='red'
-            >
-                <Text>Hello, world!</Text>
-            </AnimatedBackgroundColorView>
-        );
-    }
+  render() {
+    return (
+      <AnimatedBackgroundColorView
+        color='#00aced'
+        initialColor='red'
+      >
+        <Text>Hello, world!</Text>
+      </AnimatedBackgroundColorView>
+    );
+  }
 }
 ```
 
 ## Configuration
 You can configure `AnimatedBackgroundColorView` by passing the following props:
 
-* **color** (string, default: `'#00aced'`): the color value to which the component `backgroundColor` will animate
-* **delay** (number, default: `0`): the length in milliseconds the component will wait before animating to the next `color`
-* **duration** (number, default: `2400`): the length in milliseconds the timing animation will last
-* **easing** (React Native [Easing function](https://facebook.github.io/react-native/docs/easing.html), default: `Easing.out(Easing.exp)`): the easing function to define animation curve
-* **initialColor** (string, default: `null`): the color value from which the component `backgroundColor` will animate on mount
-* **style** (React Native [ViewPropTypes.style](https://facebook.github.io/react-native/docs/style.html)): additional styles applied to the component
+| prop | type/valid values | default | description |
+| - | - | - | - |
+| color | string | `'#00aced'` | the color value to which the component `backgroundColor` will animate |
+| delay | number | `0` | the length in milliseconds the component will wait before animating to the next `color` |
+| duration | number | `2400` | the length in milliseconds the timing animation will last |
+| easing | React Native [Easing function](https://facebook.github.io/react-native/docs/easing.html) | `Easing.out(Easing.exp)` | the easing function to define animation curve |
+| initialColor | string | `null` | the color value from which the component `backgroundColor` will animate on mount |
+| style | React Native [ViewPropTypes.style](https://facebook.github.io/react-native/docs/style.html) | `null` | additional styles applied to the component |
 
 ## Built With
 * [React Native](https://facebook.github.io/react-native/) - A framework for building native apps using React
