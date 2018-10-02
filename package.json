@@ -1,33 +1,56 @@
 {
   "name": "react-native-animated-background-color-view",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A modified React Native 'View' component that animates it's 'backgroundColor' when 'color' prop changes.",
-  "main": "index.js",
-  "author": "Joey Schroeder <schrjos@gmail.com> (joeyschroeder.com)",
-  "homepage": "https://github.com/joeyschroeder/react-native-animated-background-color-view",
+  "main": "src/index.js",
+  "scripts": {
+    "eslint": "./node_modules/.bin/eslint src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" No JavaScript ESLint errors to fix",
+    "eslint:fix": "./node_modules/.bin/eslint --fix src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" ESLint JavaScript errors fixed",
+    "lib:build": "./node_modules/.bin/babel src --out-dir lib && echo \"\\x1b[102m\\x1b[1m BABEL \\x1b[0m\" Library built",
+    "lib:clean": "rm -rf lib/ && echo \"\\x1b[102m\\x1b[1m CLEAN \\x1b[0m\" Library directory removed",
+    "lib:prepublish": "npm run --silent eslint:fix && npm run --silent lib:clean && npm run --silent lib:build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joeyschroeder/react-native-animated-background-color-view.git"
+  },
+  "files": [
+    "lib/**/*"
+  ],
   "keywords": [
     "animated",
     "background color",
     "react",
     "react-native"
   ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/joeyschroeder/react-native-animated-background-color-view.git"
+  "author": {
+    "name": "Joey Schroeder",
+    "email": "schrjos@gmail.com"
   },
+  "license": "MIT",
+  "homepage": "https://github.com/joeyschroeder/react-native-animated-background-color-view",
   "dependencies": {
-    "prop-types": "^15.6.1"
+    "prop-types": "^15.6.2"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "babel-preset-react-native": "^4.0.0",
-    "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.9.1",
-    "eslint-plugin-react-native": "^3.2.1"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react-native": "^4.0.1",
+    "babel-preset-react-optimize": "^1.0.1",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.7.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-native": "^3.3.0",
+    "prettier": "^1.14.3"
   },
   "peerDependencies": {
-    "react": ">= 15 || ~16.0.0-0",
+    "react": ">= 15 || >= 16",
     "react-native": ">=0.39"
   }
 }

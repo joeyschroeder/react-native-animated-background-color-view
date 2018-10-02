@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:react-native/all",
+    "plugin:react/recommended"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "react",
+    "react-native"
+  ],
+  "rules": {
+    "comma-dangle": 0,
+    "import/no-extraneous-dependencies": [ 0 ],
+    "import/no-unresolved": 0,
+    "import/order": [ 0 ],
+    "import/prefer-default-export": [ 0 ],
+    "jsx-a11y/click-events-have-key-events": [ 0 ],
+    "jsx-a11y/label-has-for": [ 0 ],
+    "jsx-a11y/no-static-element-interactions": [ 0 ],
+    "quotes": [ "error", "single" ],
+    "react/forbid-prop-types": [2, { "forbid": [ "any" ] }],
+    "react/jsx-filename-extension": [ 0 ],
+    "react/jsx-indent": 0,
+    "react/jsx-indent-props": 0,
+    "react/jsx-one-expression-per-line": [ 0 ],
+    "react/no-unused-prop-types": 1,
+    "semi": [ "error", "always" ]
+  }
+}
