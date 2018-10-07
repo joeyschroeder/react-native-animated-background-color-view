@@ -6,7 +6,7 @@
   "scripts": {
     "eslint": "./node_modules/.bin/eslint src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" No JavaScript ESLint errors to fix",
     "eslint:fix": "./node_modules/.bin/eslint --fix src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" ESLint JavaScript errors fixed",
-    "lib:build": "./node_modules/.bin/babel src --out-dir lib && echo \"\\x1b[102m\\x1b[1m BABEL \\x1b[0m\" Library built",
+    "lib:build": "./node_modules/.bin/babel src --out-dir lib --env-name production && echo \"\\x1b[102m\\x1b[1m BABEL \\x1b[0m\" Library built",
     "lib:clean": "rm -rf lib/ && echo \"\\x1b[102m\\x1b[1m CLEAN \\x1b[0m\" Library directory removed",
     "lib:prepublish": "npm run --silent eslint:fix && npm run --silent lib:clean && npm run --silent lib:build"
   },
@@ -36,6 +36,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react-native": "^4.0.1",
     "babel-preset-react-optimize": "^1.0.1",
@@ -43,11 +44,15 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^21.24.1",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
     "eslint-plugin-react-native": "^3.3.0",
-    "prettier": "^1.14.3"
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3",
+    "react": "^16.5.2",
+    "react-native": "^0.57.2"
   },
   "peerDependencies": {
     "react": ">= 15 || >= 16",
