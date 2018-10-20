@@ -8,7 +8,9 @@
     "eslint:fix": "./node_modules/.bin/eslint --fix src/ && echo \"\\x1b[102m\\x1b[1m ESLINT \\x1b[0m\" ESLint JavaScript errors fixed",
     "lib:build": "./node_modules/.bin/babel src --out-dir lib --env-name production && echo \"\\x1b[102m\\x1b[1m BABEL \\x1b[0m\" Library built",
     "lib:clean": "rm -rf lib/ && echo \"\\x1b[102m\\x1b[1m CLEAN \\x1b[0m\" Library directory removed",
-    "lib:prepublish": "npm run --silent eslint:fix && npm run --silent lib:clean && npm run --silent lib:build"
+    "lib:prepublish": "npm run --silent eslint:fix && npm run --silent lib:clean && npm run --silent lib:build",
+    "test": "./node_modules/.bin/jest --config ./jest.config.json",
+    "test:coverage": "./node_modules/.bin/jest --config ./jest.config.json --coverage"
   },
   "repository": {
     "type": "git",
