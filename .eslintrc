@@ -1,6 +1,7 @@
 {
   "env": {
-    "browser": true
+    "browser": true,
+    "jest/globals": true
   },
   "extends": [
     "airbnb",
@@ -11,6 +12,7 @@
   ],
   "parser": "babel-eslint",
   "plugins": [
+    "jest",
     "react",
     "react-native"
   ],
