@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AnimatedBackgroundColorView /> should render correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "rgba(0, 172, 237, 1)",
+      "flex": 1,
+    }
+  }
+/>
+`;
