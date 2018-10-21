@@ -1,2 +1,5 @@
-node_modules/
+.expo/
+coverage/
 lib/
+node_modules/
+npm-debug.*
