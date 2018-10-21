@@ -1,0 +1,19 @@
+{
+  "collectCoverageFrom": [
+    "src/**/*.js"
+  ],
+  "coverageReporters": [
+    "lcov",
+    "text"
+  ],
+  "preset": "react-native",
+  "testMatch": [
+    "**/?(*.)+(test).js"
+  ],
+  "testPathIgnorePatterns": [
+    "<rootDir>/node_modules/"
+  ],
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  }
+}
