@@ -4,6 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/issues)
 [![GitHub stars](https://img.shields.io/github/stars/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/stargazers)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 [![Dependency status](https://david-dm.org/joeyschroeder/react-native-animated-background-color-view/status.svg)](https://david-dm.org/joeyschroeder/react-native-animated-background-color-view/)
 [![devDependency status](https://david-dm.org/joeyschroeder/react-native-animated-background-color-view/dev-status.svg)](https://david-dm.org/joeyschroeder/react-native-animated-background-color-view/?type=dev)
 
