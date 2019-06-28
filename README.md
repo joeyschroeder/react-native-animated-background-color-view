@@ -1,8 +1,12 @@
 [![npm](https://img.shields.io/npm/v/react-native-animated-background-color-view.svg)](https://www.npmjs.com/package/react-native-animated-background-color-view)
-[![npm downloads](https://img.shields.io/npm/dt/react-native-animated-background-color-view.svg)](https://www.npmjs.com/package/react-native-animated-background-color-view.svg)
+[![npm downloads](https://img.shields.io/npm/dt/react-native-animated-background-color-view.svg)](https://www.npmjs.com/package/react-native-animated-background-color-view)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 [![GitHub issues](https://img.shields.io/github/issues/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/issues)
 [![GitHub stars](https://img.shields.io/github/stars/joeyschroeder/react-native-animated-background-color-view.svg)](https://github.com/joeyschroeder/react-native-animated-background-color-view/stargazers)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+[![Dependency status](https://david-dm.org/joeyschroeder/react-native-animated-background-color-view/status.svg)](https://david-dm.org/joeyschroeder/react-native-animated-background-color-view/)
+[![devDependency status](https://david-dm.org/joeyschroeder/react-native-animated-background-color-view/dev-status.svg)](https://david-dm.org/joeyschroeder/react-native-animated-background-color-view/?type=dev)
 
 # React Native Animated Background Color View
 A modified React Native `View` component that animates it's `backgroundColor` when `color` prop changes. **Works on iOS & Android.**
