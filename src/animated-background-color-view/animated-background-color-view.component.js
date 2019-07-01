@@ -1,6 +1,7 @@
 import { Animated, Easing, StyleSheet, ViewPropTypes } from 'react-native';
 import React, { Component } from 'react';
 
+import Color from 'color';
 import PropTypes from 'prop-types';
 import { isEqual } from 'lodash';
 
@@ -63,6 +64,24 @@ export class AnimatedBackgroundColorView extends Component {
     });
 
     return backgroundColor;
+  }
+
+  getCurrentColor(animationFinished = true, mixValue = 1) {
+    const { color } = this.props;
+
+    if (animationFinished) return color;
+    return this.getMixedColorValue(mixValue);
+  }
+
+  getMixedColorValue(mixValue = 1) {
+    const { color } = this.props;
+
+    const nextColor = Color(color);
+    const currentColor = Color(this.currentColor);
+
+    const mixedColor = currentColor.mix(nextColor, mixValue).hex();
+
+    return mixedColor;
   }
 
   shouldAnimate() {
