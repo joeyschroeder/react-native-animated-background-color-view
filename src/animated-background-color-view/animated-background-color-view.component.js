@@ -38,9 +38,7 @@ export class AnimatedBackgroundColorView extends Component {
     this.animation = new Animated.Value(0);
     this.state = { currentColor };
 
-    this.animate = this.animate.bind(this);
-    this.getBackgroundColor = this.getBackgroundColor.bind(this);
-    this.shouldAnimate = this.shouldAnimate.bind(this);
+    this.currentColor = currentColor;
   }
 
   componentDidMount() {
@@ -58,14 +56,13 @@ export class AnimatedBackgroundColorView extends Component {
 
   getBackgroundColor() {
     const { color } = this.props;
-    const { currentColor } = this.state;
 
     const backgroundColor = this.animation.interpolate({
       inputRange: [0, 1],
-      outputRange: [currentColor, color]
+      outputRange: [this.currentColor, color]
     });
 
-    return { backgroundColor };
+    return backgroundColor;
   }
 
   shouldAnimate() {
