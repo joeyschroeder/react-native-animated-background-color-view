@@ -2,6 +2,7 @@ import { Animated, Easing, StyleSheet, ViewPropTypes } from 'react-native';
 import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
+import { isEqual } from 'lodash';
 
 const styles = StyleSheet.create({
   container: { flex: 1 }
@@ -44,6 +45,11 @@ export class AnimatedBackgroundColorView extends Component {
 
   componentDidMount() {
     this.animate();
+  }
+
+  shouldComponentUpdate(nextProps) {
+    const { children, color } = this.props;
+    return !isEqual([children, color], [nextProps.children, nextProps.color]);
   }
 
   componentDidUpdate() {
