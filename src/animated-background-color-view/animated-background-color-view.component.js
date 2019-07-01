@@ -37,8 +37,6 @@ export class AnimatedBackgroundColorView extends Component {
     const currentColor = initialColor || color;
 
     this.animation = new Animated.Value(0);
-    this.state = { currentColor };
-
     this.currentColor = currentColor;
   }
 
@@ -86,16 +84,21 @@ export class AnimatedBackgroundColorView extends Component {
 
   shouldAnimate() {
     const { color } = this.props;
-    const { currentColor } = this.state;
+    return color !== this.currentColor;
+  }
 
-    return color !== currentColor;
+  stopAnimationAndReturnAnimationValue() {
+    this.animation.stopAnimation(value => {
+      return value;
+    });
   }
 
   animate() {
     if (!this.shouldAnimate()) return;
 
-    const { color, delay, duration, easing } = this.props;
+    const { delay, duration, easing } = this.props;
 
+    const stopValue = this.stopAnimationAndReturnAnimationValue();
     this.animation.setValue(0);
 
     Animated.timing(this.animation, {
@@ -103,8 +106,8 @@ export class AnimatedBackgroundColorView extends Component {
       duration,
       easing,
       toValue: 1
-    }).start(() => {
-      this.setState({ currentColor: color });
+    }).start(({ finished }) => {
+      this.currentColor = this.getCurrentColor(finished, stopValue);
     });
   }
 
@@ -112,7 +115,7 @@ export class AnimatedBackgroundColorView extends Component {
     const { children, style } = this.props;
 
     const backgroundColor = this.getBackgroundColor();
-    const viewStyle = [styles.container, style, backgroundColor];
+    const viewStyle = [styles.container, style, { backgroundColor }];
 
     return <Animated.View style={viewStyle}>{children}</Animated.View>;
   }
