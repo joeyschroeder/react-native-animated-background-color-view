@@ -1,1 +1,0 @@
-{"version":3,"sources":["../src/index.js"],"names":[],"mappings":"6NAAA","sourcesContent":["export { AnimatedBackgroundColorView } from './animated-background-color-view/animated-background-color-view.component';\n"],"file":"index.js"}
