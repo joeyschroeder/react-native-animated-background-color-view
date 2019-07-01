@@ -48,7 +48,7 @@ export class AnimatedBackgroundColorView extends Component {
 
   shouldComponentUpdate(nextProps) {
     const { children, color } = this.props;
-    return !isEqual([children, color], [nextProps.children, nextProps.color]);
+    return !isEqual([color, children], [nextProps.color, nextProps.children]);
   }
 
   componentDidUpdate() {
