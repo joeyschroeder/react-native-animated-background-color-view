@@ -1,9 +1,9 @@
-import { AnimatedBackgroundColorView } from './animated-background-color-view.component';
 import Color from 'color';
 import React from 'react';
 import { View } from 'react-native';
 import { create } from 'react-test-renderer';
 import { shallow } from 'enzyme';
+import { AnimatedBackgroundColorView } from './animated-background-color-view.component';
 
 describe('<AnimatedBackgroundColorView />', () => {
   describe('this.componentDidMount', () => {
