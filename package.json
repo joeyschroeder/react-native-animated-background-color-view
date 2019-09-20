@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-background-color-view",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A modified React Native 'View' component that animates it's 'backgroundColor' when 'color' prop changes.",
   "main": "index.js",
   "scripts": {
@@ -10,8 +10,11 @@
     "lib:clean": "rm -rf lib/ && echo \"\\x1b[102m\\x1b[1m CLEAN \\x1b[0m\" Library directory removed",
     "lib:copy-package-json": "cp package.json lib/ && cp README.md lib/ && echo \"\\x1b[102m\\x1b[1m COPY \\x1b[0m\" Copied package.json to library",
     "lib:delete-tests": "find lib/ -name '**test**' -delete && echo \"\\x1b[102m\\x1b[1m DELETE \\x1b[0m\" Removed tests from library",
-    "lib:prepublish": "npm run --silent eslint:fix && npm run --silent lib:clean && npm run --silent lib:build && npm run --silent lib:delete-tests && npm run --silent lib:copy-package-json",
+    "lib:pre-publish": "npm run --silent eslint:fix && npm run --silent lib:clean && npm run --silent lib:build && npm run --silent lib:delete-tests && npm run --silent lib:copy-package-json",
     "lib:publish": "npm publish ./lib",
+    "release:major": "./node_modules/.bin/changelog -M",
+    "release:minor": "./node_modules/.bin/changelog -m",
+    "release:patch": "./node_modules/.bin/changelog -p",
     "test": "./node_modules/.bin/jest --config ./jest.config.json",
     "test:coverage": "./node_modules/.bin/jest --config ./jest.config.json --coverage"
   },
@@ -59,6 +62,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-native": "^3.7.0",
+    "generate-changelog": "^1.8.0",
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
     "metro-react-native-babel-preset": "^0.56.0",
