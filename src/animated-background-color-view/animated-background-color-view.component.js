@@ -117,6 +117,10 @@ export class AnimatedBackgroundColorView extends Component {
     const backgroundColor = this.getBackgroundColor();
     const viewStyle = [styles.container, style, { backgroundColor }];
 
-    return <Animated.View style={viewStyle}>{children}</Animated.View>;
+    return (
+      <Animated.View {...this.props} style={viewStyle}>
+        {children}
+      </Animated.View>
+    );
   }
 }
