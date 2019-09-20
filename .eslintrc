@@ -19,18 +19,19 @@
   "rules": {
     "comma-dangle": 0,
     "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.js"] }],
-    "import/prefer-default-export": [ 0 ],
-    "jsx-a11y/click-events-have-key-events": [ 0 ],
-    "jsx-a11y/label-has-for": [ 0 ],
-    "jsx-a11y/no-static-element-interactions": [ 0 ],
+    "import/prefer-default-export": [0],
+    "jsx-a11y/click-events-have-key-events": [0],
+    "jsx-a11y/label-has-for": [0],
+    "jsx-a11y/no-static-element-interactions": [0],
     "prettier/prettier": 1,
-    "quotes": [ "error", "single" ],
-    "react/forbid-prop-types": [2, { "forbid": [ "any" ] }],
-    "react/jsx-filename-extension": [ 0 ],
+    "quotes": ["error", "single"],
+    "react/forbid-prop-types": [2, { "forbid": ["any"] }],
+    "react/jsx-filename-extension": [0],
     "react/jsx-indent": 0,
     "react/jsx-indent-props": 0,
-    "react/jsx-one-expression-per-line": [ 0 ],
+    "react/jsx-one-expression-per-line": [0],
     "react/no-unused-prop-types": 1,
-    "semi": [ "error", "always" ]
+    "react/static-property-placement": [2, "static public field"],
+    "semi": ["error", "always"]
   }
 }
