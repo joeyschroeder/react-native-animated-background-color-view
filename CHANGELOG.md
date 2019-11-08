@@ -1,3 +1,13 @@
+#### 1.2.4 (2019-11-08)
+
+##### Chores
+
+*  Update package dependencies ([706e0ed9](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/706e0ed9f0883c01ba85cef699660b8429b3ccc6))
+
+##### Bug Fixes
+
+*  Prevent non-View props from applying to View ([bfb31df5](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/bfb31df58a1d79138b9ea9996a216276038f9d84))
+
 #### 1.2.3 (2019-09-20)
 
 ##### Chores
