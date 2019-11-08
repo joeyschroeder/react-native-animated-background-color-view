@@ -1,6 +1,6 @@
 {
   "name": "react-native-animated-background-color-view",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A modified React Native 'View' component that animates it's 'backgroundColor' when 'color' prop changes.",
   "main": "index.js",
   "scripts": {
