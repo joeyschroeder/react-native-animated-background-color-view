@@ -1,3 +1,9 @@
+#### 1.2.5 (2019-11-27)
+
+##### Chores
+
+*  Update package dependencies ([b30c329b](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/b30c329b383b39e11b07cf9f2f331fed92a74e41))
+
 #### 1.2.4 (2019-11-08)
 
 ##### Chores
