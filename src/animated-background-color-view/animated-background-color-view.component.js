@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 import Color from 'color';
 import PropTypes from 'prop-types';
-import { isEqual } from 'lodash';
+import isEqual from 'lodash.isequal';
 
 const styles = StyleSheet.create({
   container: { flex: 1 }
