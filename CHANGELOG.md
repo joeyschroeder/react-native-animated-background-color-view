@@ -1,3 +1,10 @@
+#### 1.2.6 (2019-12-06)
+
+##### Bug Fixes
+
+*  remove full lodash ([19ccc2d3](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/19ccc2d39961b5ef116139e57786bf97fe95be6e))
+*  remove full lodash ([bfd5f8d7](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/bfd5f8d7b04929ef7faa9b86edd2ed148d24d2a5))
+
 #### 1.2.5 (2019-11-27)
 
 ##### Chores
