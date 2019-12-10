@@ -1,3 +1,13 @@
+### 1.3.0 (2019-12-10)
+
+##### Breaking Changes
+
+*  Remove default flex style ([5785b2bd](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/5785b2bd5a20e4971558c6a312164dce1daa5d5e))
+
+##### Chores
+
+*  Update package dependencies ([d336bc00](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/d336bc00d3c856d6e401e30953f87e2895c582ce))
+
 #### 1.2.6 (2019-12-06)
 
 ##### Bug Fixes
