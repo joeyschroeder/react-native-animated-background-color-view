@@ -51,6 +51,7 @@ class AnimatedBackgroundColorViewWithText extends Component {
       <AnimatedBackgroundColorView
         color='#00aced'
         initialColor='red'
+        style={{ flex: 1 }}
       >
         <Text>Hello, world!</Text>
       </AnimatedBackgroundColorView>

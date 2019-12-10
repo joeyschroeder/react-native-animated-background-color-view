@@ -5,7 +5,6 @@ exports[`<AnimatedBackgroundColorView /> should render correctly 1`] = `
   style={
     Object {
       "backgroundColor": "rgba(0, 172, 237, 1)",
-      "flex": 1,
     }
   }
 />
