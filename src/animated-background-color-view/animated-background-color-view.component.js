@@ -8,6 +8,7 @@ import isEqual from 'lodash.isequal';
 export class AnimatedBackgroundColorView extends Component {
   static propTypes = {
     children: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
+    useNativeDriver: PropTypes.bool,
     color: PropTypes.string,
     delay: PropTypes.number,
     duration: PropTypes.number,
@@ -20,6 +21,7 @@ export class AnimatedBackgroundColorView extends Component {
     children: null,
     color: '#00aced',
     delay: 0,
+    useNativeDriver: false,
     duration: 2400,
     easing: Easing.out(Easing.exp),
     initialColor: null,
@@ -92,13 +94,14 @@ export class AnimatedBackgroundColorView extends Component {
   animate() {
     if (!this.shouldAnimate()) return;
 
-    const { delay, duration, easing } = this.props;
+    const { delay, duration, easing , useNativeDriver } = this.props;
 
     const stopValue = this.stopAnimationAndReturnAnimationValue();
     this.animation.setValue(0);
 
     Animated.timing(this.animation, {
       delay,
+      useNativeDriver,
       duration,
       easing,
       toValue: 1
