@@ -13,7 +13,7 @@ export class AnimatedBackgroundColorView extends Component {
     duration: PropTypes.number,
     easing: PropTypes.func,
     initialColor: PropTypes.string,
-    style: ViewPropTypes.style
+    style: ViewPropTypes.style,
   };
 
   static defaultProps = {
@@ -23,7 +23,7 @@ export class AnimatedBackgroundColorView extends Component {
     duration: 2400,
     easing: Easing.out(Easing.exp),
     initialColor: null,
-    style: null
+    style: null,
   };
 
   constructor(props) {
@@ -54,7 +54,7 @@ export class AnimatedBackgroundColorView extends Component {
 
     const backgroundColor = this.animation.interpolate({
       inputRange: [0, 1],
-      outputRange: [this.currentColor, color]
+      outputRange: [this.currentColor, color],
     });
 
     return backgroundColor;
@@ -84,7 +84,7 @@ export class AnimatedBackgroundColorView extends Component {
   }
 
   stopAnimationAndReturnAnimationValue() {
-    this.animation.stopAnimation(value => {
+    this.animation.stopAnimation((value) => {
       return value;
     });
   }

@@ -69,11 +69,7 @@ describe('<AnimatedBackgroundColorView />', () => {
       component.instance().currentColor = currentColor;
       const result = component.instance().getCurrentColor(false, mixValue);
 
-      expect(result).toEqual(
-        Color(currentColor)
-          .mix(Color(color), mixValue)
-          .hex()
-      );
+      expect(result).toEqual(Color(currentColor).mix(Color(color), mixValue).hex());
     });
   });
 
