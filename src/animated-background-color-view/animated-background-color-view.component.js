@@ -101,7 +101,8 @@ export class AnimatedBackgroundColorView extends Component {
       delay,
       duration,
       easing,
-      toValue: 1
+      toValue: 1,
+      useNativeDriver: false,
     }).start(({ finished }) => {
       this.currentColor = this.getCurrentColor(finished, stopValue);
     });
