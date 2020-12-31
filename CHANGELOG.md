@@ -1,3 +1,21 @@
+#### 1.3.1 (2020-12-31)
+
+##### Breaking Changes
+
+*  Remove default flex style ([5785b2bd](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/5785b2bd5a20e4971558c6a312164dce1daa5d5e))
+
+##### Chores
+
+*  Update package dependencies ([196d7352](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/196d735240a9f58139639f8a100b7e4519bd7e93))
+*  Update package dependencies ([d336bc00](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/d336bc00d3c856d6e401e30953f87e2895c582ce))
+*  Update package dependencies ([b30c329b](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/b30c329b383b39e11b07cf9f2f331fed92a74e41))
+
+##### Bug Fixes
+
+*  Add useNativeDriver to animation ([0a0a8de2](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/0a0a8de2e5d580d988ea9853933aa3f6fa465c62))
+*  remove full lodash ([19ccc2d3](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/19ccc2d39961b5ef116139e57786bf97fe95be6e))
+*  remove full lodash ([bfd5f8d7](https://github.com/joeyschroeder/react-native-animated-background-color-view/commit/bfd5f8d7b04929ef7faa9b86edd2ed148d24d2a5))
+
 ### 1.3.0 (2019-12-10)
 
 ##### Breaking Changes
