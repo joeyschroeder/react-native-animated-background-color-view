@@ -10,7 +10,7 @@
     "plugin:react-native/all",
     "plugin:react/recommended"
   ],
-  "parser": "babel-eslint",
+  "parser": "@babel/eslint-parser",
   "plugins": [
     "jest",
     "react",
