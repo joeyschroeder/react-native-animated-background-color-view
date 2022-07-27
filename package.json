@@ -44,6 +44,7 @@
   "homepage": "https://github.com/joeyschroeder/react-native-animated-background-color-view",
   "dependencies": {
     "color": "^4.2.3",
+    "deprecated-react-native-prop-types": "^2.3.0",
     "lodash.isequal": "^4.5.0",
     "prop-types": "^15.8.1"
   },

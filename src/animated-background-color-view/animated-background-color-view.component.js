@@ -1,5 +1,6 @@
-import { Animated, Easing, ViewPropTypes } from 'react-native';
+import { Animated, Easing } from 'react-native';
 import React, { Component } from 'react';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 
 import Color from 'color';
 import PropTypes from 'prop-types';
