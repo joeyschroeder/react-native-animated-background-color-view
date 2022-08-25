@@ -1,4 +1,4 @@
-import { Animated, Easing, ViewPropTypes } from 'react-native';
+import { Animated, Easing } from 'react-native';
 import React, { Component } from 'react';
 
 import Color from 'color';
@@ -13,7 +13,7 @@ export class AnimatedBackgroundColorView extends Component {
     duration: PropTypes.number,
     easing: PropTypes.func,
     initialColor: PropTypes.string,
-    style: ViewPropTypes.style,
+    style: PropTypes.object,
   };
 
   static defaultProps = {
@@ -22,8 +22,8 @@ export class AnimatedBackgroundColorView extends Component {
     delay: 0,
     duration: 2400,
     easing: Easing.out(Easing.exp),
-    initialColor: null,
-    style: null,
+    initialColor: undefined,
+    style: undefined,
   };
 
   constructor(props) {

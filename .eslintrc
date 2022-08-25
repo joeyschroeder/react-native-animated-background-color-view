@@ -11,11 +11,7 @@
     "plugin:react/recommended"
   ],
   "parser": "@babel/eslint-parser",
-  "plugins": [
-    "jest",
-    "react",
-    "react-native"
-  ],
+  "plugins": ["jest", "react", "react-native"],
   "rules": {
     "comma-dangle": 0,
     "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.test.js", "./test-setup.js"] }],
